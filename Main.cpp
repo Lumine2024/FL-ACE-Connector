@@ -120,7 +120,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInst, _In_opt_ HINSTANCE hPrev, _In_ LPSTR nC
 	wnd.lpszClassName = L"C";
 	wnd.lpfnWndProc = MainProc;
 	if (!RegisterClassEx(&wnd)) {
-		MessageBox(0, L"注册失败", L"错误", 0);
+		MessageBox(0, L"Registry failed. Please retry. If you failed repeatedly, please send me a message by Github or Bilibili.", L"FL_ACE Connector", 0);
 		return 1;
 	}
 	HWND hwnd = CreateWindow(L"C", L"FL_ACE Connector", WS_OVERLAPPEDWINDOW, 200, 60, 500, 500, 0, 0, hInst, 0);
