@@ -1,6 +1,8 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include<windows.h>
 #include"MyStringAlgorithm.hpp"//Go find my previous file
+#include<iostream>
+#include<fstream>
 PAINTSTRUCT ps;
 HDC hdc;
 static HWND hbutton1{}, hbutton2{}, FL = 0, ACE = 0, Connector, hdelay{}, hbutton3;
